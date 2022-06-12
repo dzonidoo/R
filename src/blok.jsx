@@ -107,6 +107,12 @@ function Block({setMain, setBlock}) {
             setCorrect('')
     }
 
+    if (niz.length <= objekat) {
+        setMain(true);
+        setBlock(false);
+        console.log('aa');
+    }
+
   return (
     <div className='block'>
             
