@@ -1,0 +1,59 @@
+@media screen and (max-width: 600px) {
+    .block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 0;
+        font-family: 'Langar', cursive;
+    }
+    .block div {
+        padding: 20px 0;
+    }
+    .block__question {
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        font-family: 'Langar', cursive;
+    }
+    .block__btn {
+        display: flex;
+        align-items: center;
+        font-family: 'Langar', cursive;
+    }
+    .block__btn button {
+        padding: 10px 15px;
+        width: 100px;
+        height: 50px;
+        margin: 10px;
+        background-color: white;
+        font-size: 20px;
+        border: none;
+        border-radius: 5px;
+        font-family: 'Langar', cursive;
+    }
+    .block__desc {
+        font-size: 18px;
+        color: rgb(115, 4, 129);
+        font-family: 'Langar', cursive;
+    }
+    .false {
+        background-color: rgb(187, 15, 15) !important;
+        color: white !important;
+    }
+    .true {
+        background-color: rgb(33, 204, 33) !important;
+        color: white !important;
+    }
+    .next {
+        font-size: 25px;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        background-color: transparent;
+        border: 2px solid rgb(115, 4, 129);
+        color: rgb(115, 4, 129);
+    }
+}

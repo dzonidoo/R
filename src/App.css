@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Langar&family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Langar&family=Monofett&family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Langar&family=Parisienne&display=swap');
+@media screen and (max-width: 600px) {
+    body {
+        background-image: url('./fla.png');
+        background-size: cover;
+    }
+    .vremeplov img {
+        width: 300px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 2px solid rgb(253, 147, 147);
+        border-radius: 10px;
+    }
+    .vremeplov div {
+        padding: 20px 40px 0 40px;
+        display: flex;
+        justify-content: center;
+    }
+    .vremeplovOkvir {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .back {
+        position: absolute;
+        bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .back button {
+        background-color: transparent;
+        border: 3px solid white;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+        padding: 10px 15px;
+    }
+    .vreme__back button {
+        background-color: transparent;
+        border: 3px solid white;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+    .vreme__back {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+    .main__btn {
+        font-size: 40px;
+        color: white;
+        background-color: transparent;
+        border: none;
+        padding: 10px;
+        margin-bottom: 20px;
+        font-family: 'Monofett', cursive;
+    }
+    .main1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 40px;
+    }
+    img {
+        margin: 0;
+    }
+    .hb {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(255, 255, 255);
+        font-size: 40px;
+        text-align: center;
+        padding: 40px 20px;
+    }
+    .hb p {
+        font-family: 'Parisienne', cursive;
+    }
+    .hbMain {
+        display: flex;
+        justify-content: center;
+    }
 }
