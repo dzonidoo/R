@@ -13,7 +13,8 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        border: 2px solid rgb(253, 147, 147);
+        border: 2px solid rgb(243, 190, 190);
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.185);
         border-radius: 10px;
     }
     .vremeplov div {
@@ -25,6 +26,7 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
+        align-items: center;
     }
     .back {
         position: absolute;
@@ -90,5 +92,8 @@
     .hbMain {
         display: flex;
         justify-content: center;
+    }
+    h1 {
+        font-family: 'Parisienne', cursive;
     }
 }

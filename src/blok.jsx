@@ -1,6 +1,7 @@
 import { logRoles } from '@testing-library/react';
 import React, { useState } from 'react';
 import './block.css';
+import img from './286533725_1477675329340140_8054160188795074592_n.jpg'
 
 
 function Block({setMain, setBlock}) {
@@ -23,12 +24,12 @@ function Block({setMain, setBlock}) {
         pitanje: 'Da li sam ja taj koji je prvi poslao golotinju u cetu?',
         odgovori: [
             {
-                odgovor: 'YES',
-                value: false,
-            },
-            {
                 odgovor: 'NO',
                 value: true,
+            },
+            {
+                odgovor: 'YES',
+                value: false,
             },
         ],
         desc: 'Znao sam da ces da pogresis.. zapravo si ti 7 oktobra meni cestitala rodjendan porovokativnim videom u brusu'
@@ -37,15 +38,44 @@ function Block({setMain, setBlock}) {
         pitanje: 'Da li si pila alkohol prvi put kad smo se videli?',
         odgovori: [
             {
+                odgovor: 'NO',
+                value: true,
+            },
+            {
                 odgovor: 'YES',
                 value: false,
             },
+        ],
+        desc: 'Zapravo kupio sam ti vodku i guaranu ali samo guarana je bila otvorena'
+    },
+    {
+        pitanje: 'Jastuce gomno je najgluplji poklon koji si mi kupila??',
+        odgovori: [
             {
                 odgovor: 'NO',
                 value: true,
             },
+            {
+                odgovor: 'Yes',
+                value: false,
+            },
         ],
-        desc: 'Zapravo kupio sam ti vodku i guaranu ali samo guarana je bila otvorena'
+        desc: 'Ne to je bila ona solja sa onog medveda :/'
+    },
+    {
+        pitanje: `Da li si ovo ti na slici HAHAHAHAHAH?`,
+        slika: img,
+        odgovori: [
+            {
+                odgovor: 'NO',
+                value: false,
+            },
+            {
+                odgovor: 'YES',
+                value: true,
+            },
+        ],
+        desc: 'HAHAHA'
     },
     
 ]
@@ -84,11 +114,16 @@ function Block({setMain, setBlock}) {
                 <div className='block__question'>
                     {niz[objekat].pitanje}
                 </div>
+
+                {niz[objekat].slika &&
+                    <div><img style={{width: '80px', height: 'auto'}} src={niz[objekat].slika} /></div>
+                }
                     
                     <div className='block__btn'>
                         {niz[objekat].odgovori.map((e, i) => {
                             
                             return (
+                            
                             <div key={i}>
                                 <button className={e.value ? correct : wrong} value={e} onClick={(i) => {
                                     
@@ -98,10 +133,12 @@ function Block({setMain, setBlock}) {
                             
                             )
                         })}
+                        
                     </div>
+                    
                     {correct == 'true' && 
                     <div className='block__desc'>
-                        <p>{niz[objekat].desc}</p>
+                        <p>- "{`${niz[objekat].desc}`}"</p>
                     </div>
                     }
                     {wrong == 'false' && 

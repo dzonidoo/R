@@ -38,7 +38,7 @@ function App() {
             setHb(!hb);
             setMain(false)
           }}
-          className='main__btn'>hmm</button>
+          className='main__btn'>13. JUN</button>
         </div>
 
 
